@@ -18,9 +18,9 @@
       <div class="boss relative flex flex-col justify-center items-center">
       
 
-        <h1 class="text-4xl font-extrabold text-cyan-300">000000 Lumina Points</h1>
+        <h1 id="pointCounter" class="text-2xl font-extrabold text-cyan-300">0 Lumina Points</h1>
 
-        <button class="cursor-pointer clicker">
+        <button onclick="changePoint(1)" class="cursor-pointer transition-all duration-50 clicker active:scale-75">
           <img src="/src/images/mime.webp">
         </button>
 
@@ -33,16 +33,16 @@
 
       <div class="characters">
 
-        <button class="character">
+        <button onclick="buyGustave()" class="character">
           <img src="/src/images/characters/gustave.webp">
 
           <div>
             <h2>Gustave</h2>
-            <p>Level 00</p>
+            <p id="gLevel">Level 00</p>
             <p>Cost: 100 lp</p>
           </div>
         </button>
-        
+
 
         <button class="character">
           <img src="/src/images/characters/maelle.webp">
@@ -65,6 +65,6 @@
       </div>
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>
