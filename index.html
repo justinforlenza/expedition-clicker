@@ -20,7 +20,7 @@
 
         <h1 id="pointCounter" class="text-2xl font-extrabold text-cyan-300">0 Lumina Points</h1>
 
-        <button onclick="changePoint(1)" class="cursor-pointer transition-all duration-50 clicker active:scale-75">
+        <button onclick="changePoint(1)" class="cursor-pointer transition-all duration-50 clicker active:scale-75 active:rotate-12">
           <img src="/src/images/mime.webp">
         </button>
 
@@ -44,20 +44,20 @@
         </button>
 
 
-        <button class="character">
+        <button onclick="buyMaelle()" class="character">
           <img src="/src/images/characters/maelle.webp">
           <div>
             <h2>Maelle</h2>
-            <p>Level 00</p>
+            <p id="mLevel">Level 00</p>
             <p>Cost: 10000 lp</p>
           </div>
         </button>
 
-        <button class="character">
+        <button onclick="buyLune()" class="character">
           <img src="/src/images/characters/lune.webp">
           <div>
             <h2>Lune</h2>
-            <p>Level 00</p>
+            <p id="lLevel">Level 00</p>
             <p>Cost: 10000000 lp</p>
           </div>
         </button>
