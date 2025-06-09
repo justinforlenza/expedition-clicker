@@ -1,4 +1,4 @@
-let points = 0
+let points = 100
 
 let gustaveLevel = 0
 let gLevel = document.getElementById('gLevel')
@@ -17,7 +17,7 @@ function changePoint(amount) {
 
     console.log(points)
 
-    pointCounter.innerText = points + ' Lumina Points'
+    pointCounter.innerText = points.toFixed(2) + ' Lumina Points'
 }
 
 function buyGustave() {
@@ -48,4 +48,11 @@ function buyLune() {
     } else {
         alert("You poor")
     }
+}
+
+
+function bigClick() {
+    let basePoint = 1 + (gustaveLevel ** 1.05) + (maelleLevel ** 100.05)
+
+    changePoint(basePoint)
 }
